@@ -1,7 +1,6 @@
 package me.pieralini.com.radix.operation;
 
 import me.pieralini.com.radix.model.RadixNumber;
-
 import java.math.BigInteger;
 
 public class RadixArithmetic {

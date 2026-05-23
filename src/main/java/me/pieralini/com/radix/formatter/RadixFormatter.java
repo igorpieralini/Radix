@@ -43,11 +43,14 @@ public class RadixFormatter {
      * Retorna o valor com o prefixo da base.
      */
     public static String withPrefix(RadixNumber number) {
+        
         switch (number.getRadix()) {
             case 2:
                 return "0b" + number.getValue();
+                
             case 16:
                 return "0x" + number.getValue();
+                
             default:
                 return number.getValue();
         }

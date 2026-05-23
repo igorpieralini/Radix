@@ -1,7 +1,6 @@
 package me.pieralini.com.radix.model;
 
 import me.pieralini.com.radix.validation.RadixValidator;
-
 import java.math.BigInteger;
 
 public class HexaDecimal extends RadixNumber {
