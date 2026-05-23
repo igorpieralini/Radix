@@ -1,6 +1,6 @@
 # Radix
 
-Uma biblioteca Java para manipulação de números em diferentes bases numéricas (binário, decimal e hexadecimal).
+Uma futura biblioteca Maven para manipulação de números em diferentes bases numéricas (binário, decimal e hexadecimal).
 
 ## 📋 Funcionalidades
 
