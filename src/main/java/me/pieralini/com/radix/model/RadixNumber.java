@@ -12,11 +12,8 @@ import java.util.Objects;
 public abstract class RadixNumber implements Comparable<RadixNumber> {
 
     protected BigInteger internalValue;
-
     public abstract int getRadix();
-
     public abstract String getValue();
-
     protected abstract RadixNumber fromBigInteger(BigInteger value);
 
     public int toDecimal() {
