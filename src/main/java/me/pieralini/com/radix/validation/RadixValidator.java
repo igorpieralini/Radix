@@ -20,7 +20,6 @@ public class RadixValidator {
             throw new IllegalArgumentException("Valor não pode ser apenas um sinal negativo.");
         }
 
-
         switch (radix) {
 
             case 2:
@@ -42,7 +41,7 @@ public class RadixValidator {
                 throw new IllegalArgumentException("Base não suportada: " + radix);
         }
 
-        for (char c : toCheck.toCharArray()) {
+        for (char c : toCheck.toCharArray()) {   
             if (validChars.indexOf(c) == -1) {
                 throw new IllegalArgumentException(
                         "Caractere inválido '" + c + "' para " + baseName + ". Valor: " + value
@@ -52,12 +51,14 @@ public class RadixValidator {
     }
 
     public static boolean isValid(String value, int radix) {
+        
         try {
             validate(value, radix);
             return true;
         } catch (IllegalArgumentException e) {
             return false;
         }
+        
     }
 }
 
